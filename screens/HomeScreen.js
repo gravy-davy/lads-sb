@@ -1,22 +1,25 @@
 import React from 'react';
 import { ImageBackground, StyleSheet, Text, Button, Alert, View } from 'react-native';
-import BurnsScreen from './BurnsScreen';
 
 function HomeScreen({navigation}) {
     return (
     <>  
+        <ImageBackground 
+            style = {styles.backgroundLogo}
+            source={require("../assets/corkcity.png")}>
+        </ImageBackground>     
         <View style={styles.buttonFormat}>
             <Button
                 title="Burns"
                 onPress={() => {navigation.navigate('Burns')}}
-                color = "#9900cc"
+                color = "#e62e00"
             />
         </View>
         <View style={styles.buttonFormat}>
             <Button
                 title="Ramk"
                 onPress={() => Alert.alert('Ramk has been selected.')}
-                color = "#9900cc"
+                color = "#e62e00"
             />
         </View>
     </>  
