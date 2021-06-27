@@ -18,7 +18,7 @@ function HomeScreen({navigation}) {
         <View style={styles.buttonFormat}>
             <Button
                 title="Ramk"
-                onPress={() => Alert.alert('Ramk has been selected.')}
+                onPress={() => Alert.alert('Coming soon!')}
                 color = "#e62e00"
             />
         </View>
