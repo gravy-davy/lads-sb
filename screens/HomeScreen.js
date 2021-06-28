@@ -1,26 +1,30 @@
 import React from 'react';
 import { ImageBackground, StyleSheet, Text, Button, Alert, View } from 'react-native';
 
+// text #20e4f0
+
 function HomeScreen({navigation}) {
     return (
     <>  
-        <ImageBackground 
-            style = {styles.backgroundLogo}
-            source={require("../assets/corkcity.png")}>
-        </ImageBackground>     
-        <View style={styles.buttonFormat}>
-            <Button
-                title="Burns"
-                onPress={() => {navigation.navigate('Burns')}}
-                color = "#e62e00"
-            />
-        </View>
-        <View style={styles.buttonFormat}>
-            <Button
-                title="Ramk"
-                onPress={() => Alert.alert('Coming soon!')}
-                color = "#e62e00"
-            />
+        <View style={{ flex: 1, backgroundColor: '#26283b'}}>
+            <ImageBackground 
+                style = {styles.backgroundLogo}
+                source={require("../assets/cc_logo.png")}>
+            </ImageBackground>      
+            <View style={styles.buttonFormat}>
+                <Button
+                    title="Burns"
+                    onPress={() => {navigation.navigate('Burns')}}
+                    color = "#20e6f0"
+                />
+            </View>
+            <View style={styles.buttonFormat}>
+                <Button
+                    title="Ramk"
+                    onPress={() => Alert.alert('Coming soon!')}
+                    color = "#20e6f0"
+                />
+            </View>
         </View>
     </>  
     );
@@ -29,22 +33,17 @@ function HomeScreen({navigation}) {
 const styles = StyleSheet.create({
     backgroundLogo : 
     {
-        width: undefined,
-        height: undefined,
-        aspectRatio: 1
-    },
-    titleText :
-    {
-        color : 'purple',
-        textAlign : 'center'
+        aspectRatio: 10,
+        position: 'relative',
+        top: '25%'
     },
     buttonFormat:
     {
-        height: '10%', 
-        width: '50%', 
-        left: '25%', 
-        right: '25%', 
-        paddingTop: '5%' 
+        paddingTop: '10%',
+        top: '25%',
+        position: 'relative',
+        width: '30%', 
+        alignSelf: 'center'
     }
 })
 
