@@ -1,26 +1,28 @@
 import React from 'react';
 import { ImageBackground, StyleSheet, Text, Button, Alert, View } from 'react-native';
 import { Audio } from "expo-av";
+import {bgColor, buttonColor} from './appStyles'
 
 let soundObject = new Audio.Sound();
 
 function BurnsScreen({navigation}) {
+    let buttonC = buttonColor.valueOf()
     return (
         <>
-        <View style={{ flex: 1, backgroundColor: '#26283b'}}>
+        <View style={{ flex: 1, backgroundColor: bgColor.valueOf()}}>
             <View style={{ flexDirection:"row" }}>
             <View style={styles.buttonFormatLeft}>
                 <Button
                         title="miami 4 eva"
                         onPress={() => loadAudio(1)}
-                        color = "#e62e00"
+                        color = {buttonColor}
                     />
             </View>
             <View style={styles.buttonFormatRight}>
                 <Button
                         title="break time"
                         onPress={() => loadAudio(2)}
-                        color = "#e62e00"
+                        color = {buttonColor}
                     />
             </View>
             </View>
@@ -29,14 +31,14 @@ function BurnsScreen({navigation}) {
                 <Button
                         title="we back"
                         onPress={() => loadAudio(3)}
-                        color = "#e62e00"
+                        color = {buttonColor}
                     />
             </View>
             <View style={styles.buttonFormatRight}>
                 <Button
                         title="beggin"
                         onPress={() => loadAudio(4)}
-                        color = "#e62e00"
+                        color = {buttonColor}
                     />
             </View>
             </View>
@@ -45,14 +47,14 @@ function BurnsScreen({navigation}) {
                 <Button
                         title="need boost"
                         onPress={() => loadAudio(5)}
-                        color = "#e62e00"
+                        color = {buttonColor}
                     />
             </View>
             <View style={styles.buttonFormatRight}>
                 <Button
                         title="ez dub"
                         onPress={() => loadAudio(6)}
-                        color = "#e62e00"
+                        color = {buttonColor}
                     />
             </View>
             </View>
@@ -61,14 +63,14 @@ function BurnsScreen({navigation}) {
                 <Button
                         title="seniors"
                         onPress={() => loadAudio(7)}
-                        color = "#e62e00"
+                        color = {buttonColor}
                     />
             </View>
             <View style={styles.buttonFormatRight}>
                 <Button
                         title="useless"
                         onPress={() => loadAudio(8)}
-                        color = "#e62e00"
+                        color = {buttonColor}
                     />
             </View>
             </View>
@@ -77,14 +79,14 @@ function BurnsScreen({navigation}) {
                 <Button
                         title="bing"
                         onPress={() => loadAudio(9)}
-                        color = "#e62e00"
+                        color = {buttonColor}
                     />
             </View>
             <View style={styles.buttonFormatRight}>
                 <Button
                         title="smoker cough"
                         onPress={() => loadAudio(10)}
-                        color = "#e62e00"
+                        color = {buttonColor}
                     />
             </View>
             </View>

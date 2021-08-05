@@ -1,12 +1,13 @@
 import React from 'react';
 import { ImageBackground, StyleSheet, Text, Button, Alert, View } from 'react-native';
+import {bgColor, buttonColor} from './appStyles'
 
-// text #20e4f0
+// text #20e4f0, color 20e6f0. color should be imported not hardcoded
 
 function HomeScreen({navigation}) {
     return (
     <>  
-        <View style={{ flex: 1, backgroundColor: '#26283b'}}>
+        <View style={{ flex: 1, backgroundColor: bgColor.valueOf()}}>
             <ImageBackground 
                 style = {styles.backgroundLogo}
                 source={require("../assets/cc_logo.png")}>
@@ -15,14 +16,14 @@ function HomeScreen({navigation}) {
                 <Button
                     title="Burns"
                     onPress={() => {navigation.navigate('Burns')}}
-                    color = "#20e6f0"
+                    color = {buttonColor}
                 />
             </View>
             <View style={styles.buttonFormat}>
                 <Button
                     title="Ramk"
                     onPress={() => Alert.alert('Coming soon!')}
-                    color = "#20e6f0"
+                    color = {buttonColor}
                 />
             </View>
         </View>
